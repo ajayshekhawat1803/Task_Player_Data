@@ -56,52 +56,48 @@ const PlayerData = () => {
 
             {
                 showData && (<div id='container'>
-                    <div className="form-cont">
+                    <form className="form-cont" >
                         <div className="input-cont">
-                            <label htmlFor="srno">Serial No.</label>
-                            <input disabled type="text" id='srno' value={srno} />
+                            <h3>Serial No.</h3>
+                            <h2>{srno}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="name">Player Name</label>
-                            <input disabled type="text" id='name' value={name} />
+                            <h3>Player Name</h3>
+                            <h2>{name}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="aadhar">Aadhar Number</label>
-                            <input disabled type="number" id='name' value={aadharNo} />
+                            <h3>Aadhar Number</h3>
+                            <h2>{aadharNo}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="game">Game</label>
-                            <input disabled type="text" id='game' value={game} />
+                            <h3>Game</h3>
+                            <h2>{game}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="ageGrp">Age Group</label>
-                            <input disabled value={ageGrp} />
+                            <h3>Age Group</h3>
+                            <h2>{ageGrp}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="position">Position</label>
-                            <input disabled value={position} />
+                            <h3>Position</h3>
+                            <h2>{position}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="state">State</label>
-                            <input disabled type="text" id='state' value={state} />
+                            <h3>State</h3>
+                            <h2>{state}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="tournamentName">Tournament Name</label>
-                            <input disabled type="text" id='tournamentName' value={tournamentName} />
+                            <h3>Tournament Name</h3>
+                            <h2>{tournamentName}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="organisedAt">Organised At</label>
-                            <input disabled type="text" id='organisedAt' value={organisedAt} />
+                            <h3>Organised At</h3>
+                            <h2>{organisedAt}</h2>
                         </div>
                         <div className="input-cont">
-                            <label htmlFor="venue">Venue</label>
-                            <input disabled type="text" id='venue' value={venue} />
+                            <h3>Venue</h3>
+                            <h2>{venue}</h2>
                         </div>
-                        {/* <div className="input-cont">
-                            <label htmlFor="action">Action</label>
-                            <a href="#">Download Pdf</a>
-                        </div> */}
-                    </div>
+                    </form>
                 </div>)
             }
         </>

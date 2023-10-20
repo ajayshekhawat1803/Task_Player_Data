@@ -15,4 +15,11 @@ html,body{
   justify-content: flex-start;
   align-items: center;
   padding-bottom: 50px;
+  background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://images.unsplash.com/photo-1560931296-168316935386?auto=format&fit=crop&q=80&w=1776&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background: linear-gradient(to bottom right,rgb(117, 218, 249),rgb(239, 5, 5)); */
+  /* background: radial-gradient(blue,red,yellow); */
+  /* background: linear-gradient(to left bottom, rgb(38, 188, 238), rgb(244, 127, 127)); */
 }

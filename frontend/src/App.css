@@ -6,22 +6,32 @@ header {
   align-items: center;
   gap: 30px;
   padding: 7px 30px;
-  background-color: antiquewhite;
+  background-color: rgb(76, 193, 232);
+}
+
+header a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: 800;
+  color: black;
+  cursor: pointer;
+  -webkit-text-stroke: 1px red;
 }
 
 #container {
   width: 90%;
-  max-width: 700px;
+  max-width: 750px;
   border-radius: 10px;
-  border: 1px solid;
-  padding-top: 20px;
+  background: #fff;
+  color: black;
+  padding: 20px;
 }
 
 .form-cont {
   width: 100%;
-  max-width: 600px;
   margin: auto;
-  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -30,9 +40,13 @@ header {
 
 .form-cont .input-cont {
   width: 100%;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
+  background-color: #f7f7f7;
+  padding: 5px;
+  padding-left: 20px;
+
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .form-cont .input-cont label {
@@ -45,11 +59,28 @@ header {
   flex: 1;
   padding: 10px;
   border-radius: 8px;
-  border: 1px solid;
+  border: none;
   outline: none;
   font-size: 0.9rem;
 }
-.form-cont .input-cont option{
+
+.form-cont .input-cont h3 {
+  font-size: 1.07rem;
+  min-width: 190px;
+  color: #444444;
+}
+
+.form-cont .input-cont h2 {
+  flex: 1;
+  padding: 10px;
+  padding-left: 20px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 1.03rem;
+  background-color: #ffffff;
+}
+
+.form-cont .input-cont option {
   font-size: 0.85rem;
 }
 
@@ -103,7 +134,9 @@ header {
   text-align: center;
   width: 100%;
   margin: 20px;
-  -webkit-text-stroke: 1px red;
+  /* -webkit-text-stroke: 1px red; */
+  text-shadow: 0px 0px 10px white;
+
 }
 
 
@@ -113,7 +146,8 @@ header {
     align-items: flex-start;
     gap: 2px;
   }
-  .form-cont .input-cont input{
+
+  .form-cont .input-cont input {
     width: 100%;
   }
 }
