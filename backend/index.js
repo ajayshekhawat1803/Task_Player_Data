@@ -4,7 +4,8 @@ import mongoose from "mongoose";
 import PlayerModel from "./PlayerModel.js";
 
 const port = 4000;
-const connection = mongoose.connect("mongodb://localhost:27017/Task")
+// const connection = mongoose.connect("mongodb://localhost:27017/Task")
+const connection = mongoose.connect("mongodb://127.0.0.1:27017/Task")
 
 const app = express()
 app.use(express.json())

@@ -49,8 +49,7 @@ const GetData = () => {
   const formContainerRef = useRef(null);
   const GeneratePdf = () => {
     const formContainer = formContainerRef.current;
-    html2canvas(formContainer)
-      .then((canvas) => {
+
         html2canvas(formContainer).then((canvas) => {
           const imgData = canvas.toDataURL('image/png');
           const pdf = new jsPDF('l', 'mm', 'a4');
@@ -61,7 +60,7 @@ const GetData = () => {
           pdf.addImage(imgData, 'PNG', 10, 10, pageWidth, pageHeight);
           pdf.save('form.pdf');
         });
-      })
+      
   }
 
 
